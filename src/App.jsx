@@ -14,6 +14,7 @@ function App() {
         <Link to="/home">Home</Link>
         <Link to="/profile">Profile</Link>
       </nav>
+      <h2>{import.meta.env.VITE_API_KEY}</h2>
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
